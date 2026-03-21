@@ -6,7 +6,6 @@ import path from 'path'
 import { fromHtmlIsomorphic } from 'hast-util-from-html-isomorphic'
 // Remark packages
 import remarkGfm from 'remark-gfm'
-import remarkMath from 'remark-math'
 import { remarkAlert } from 'remark-github-blockquote-alert'
 import {
   remarkExtractFrontmatter,
@@ -17,9 +16,6 @@ import {
 // Rehype packages
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
-import rehypeKatex from 'rehype-katex'
-import rehypeKatexNoTranslate from 'rehype-katex-notranslate'
-import rehypeCitation from 'rehype-citation'
 import rehypePrismPlus from 'rehype-prism-plus'
 import rehypePresetMinify from 'rehype-preset-minify'
 import siteMetadata from './data/siteMetadata'
@@ -60,7 +56,7 @@ const computedFields: ComputedFields = {
 }
 
 /**
- * Count the occurrences of all tags across blog posts and write to json file
+ * Count the occurrences of all tech across projects posts and write to json file
  */
 async function createTagCount(allBlogs) {
   const tagCount: Record<string, number> = {}
@@ -95,7 +91,7 @@ function createSearchIndex(allBlogs) {
 
 export const Blog = defineDocumentType(() => ({
   name: 'Blog',
-  filePathPattern: 'blog/**/*.mdx',
+  filePathPattern: 'projects/**/*.mdx',
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -156,7 +152,6 @@ export default makeSource({
       remarkExtractFrontmatter,
       remarkGfm,
       remarkCodeTitles,
-      remarkMath,
       remarkImgToJsx,
       remarkAlert,
     ],
@@ -172,9 +167,6 @@ export default makeSource({
           content: icon,
         },
       ],
-      rehypeKatex,
-      rehypeKatexNoTranslate,
-      [rehypeCitation, { path: path.join(root, 'data') }],
       [rehypePrismPlus, { defaultLanguage: 'js', ignoreMissing: true }],
       rehypePresetMinify,
     ],

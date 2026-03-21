@@ -1,9 +1,9 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Next.js Starter Blog',
-  author: 'Tails Azimuth',
-  headerTitle: 'TailwindBlog',
-  description: 'A blog created with Next.js and Tailwind.css',
+  title: 'Daniel´s Portfolio',
+  author: 'Daniel Antony',
+  headerTitle: '<DA />',
+  description: 'Portfolio eines Full Stack Developer & IMS Schüler im 3.ten Jahr.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -11,17 +11,8 @@ const siteMetadata = {
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  email: 'daniel.antonymenistren@gmail.com',
   github: 'https://github.com',
-  x: 'https://twitter.com/x',
-  // twitter: 'https://twitter.com/Twitter',
-  facebook: 'https://facebook.com',
-  youtube: 'https://youtube.com',
-  linkedin: 'https://www.linkedin.com',
-  threads: 'https://www.threads.net',
-  instagram: 'https://www.instagram.com',
-  medium: 'https://medium.com',
-  bluesky: 'https://bsky.app/',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
@@ -37,7 +28,7 @@ const siteMetadata = {
       // Remember to add 'us.umami.is' in `next.config.js` as a permitted domain for the CSP
     },
     // plausibleAnalytics: {
-    //   plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
+    //   plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-projects.vercel.app
     // If you are hosting your own Plausible.
     //   src: '', // e.g. https://plausible.my-domain.com/js/script.js
     // },
@@ -83,20 +74,6 @@ const siteMetadata = {
       // This corresponds to the `data-lang="en"` in giscus's configurations
       lang: 'en',
     },
-  },
-  search: {
-    provider: 'kbar', // kbar or algolia
-    kbarConfig: {
-      searchDocumentsPath: `${process.env.BASE_PATH || ''}/search.json`, // path to load documents to search
-    },
-    // provider: 'algolia',
-    // algoliaConfig: {
-    //   // The application ID provided by Algolia
-    //   appId: 'R2IYF7ETH7',
-    //   // Public API key: it is safe to commit it
-    //   apiKey: '599cec31baffa4868cae4e79f180729b',
-    //   indexName: 'docsearch',
-    // },
   },
 }
 
