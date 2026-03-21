@@ -5,7 +5,10 @@ export default function ContactForm() {
     <form className="flex w-full flex-col space-y-4">
       {/* Name Field */}
       <div>
-        <label htmlFor="name" className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100">
+        <label
+          htmlFor="name"
+          className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100"
+        >
           Name
         </label>
         <input
@@ -20,7 +23,10 @@ export default function ContactForm() {
 
       {/* Email Field */}
       <div>
-        <label htmlFor="email" className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100">
+        <label
+          htmlFor="email"
+          className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100"
+        >
           E-Mail-Adresse
         </label>
         <input
@@ -35,7 +41,10 @@ export default function ContactForm() {
 
       {/* Message Field */}
       <div>
-        <label htmlFor="message" className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100">
+        <label
+          htmlFor="message"
+          className="mb-1 block text-sm font-medium text-gray-900 dark:text-gray-100"
+        >
           Nachricht
         </label>
         <textarea

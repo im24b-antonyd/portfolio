@@ -106,7 +106,7 @@ export default function Projects() {
               <div className="mb-6">
                 <Link
                   href={project.learnMoreLink}
-                  className="group inline-flex items-center text-sm font-medium text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                  className="group text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center text-sm font-medium"
                 >
                   Learn More
                   <svg
@@ -128,7 +128,7 @@ export default function Projects() {
               </div>
 
               {/* Technology Tags */}
-              <div className="mt-auto flex flex-wrap gap-2 pt-4 border-t border-gray-100 dark:border-gray-700">
+              <div className="mt-auto flex flex-wrap gap-2 border-t border-gray-100 pt-4 dark:border-gray-700">
                 {project.tags.map((tag) => (
                   <span
                     key={tag}

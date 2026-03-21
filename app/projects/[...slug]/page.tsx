@@ -6,7 +6,7 @@ import { coreContent } from 'pliny/utils/contentlayer'
 // 1. Tell Next.js which pages to build
 export const generateStaticParams = async () => {
   return allBlogs.map((p) => ({
-    slug: p.slug.split('/')
+    slug: p.slug.split('/'),
   }))
 }
 
@@ -27,17 +27,15 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl">
       <header className="pt-6 xl:pb-6">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+        <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
           {post.title}
         </h1>
         {post.summary && (
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {post.summary}
-          </p>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">{post.summary}</p>
         )}
       </header>
 
-      <div className="prose dark:prose-invert max-w-none pb-8 pt-10">
+      <div className="prose dark:prose-invert max-w-none pt-10 pb-8">
         {/* 4. This renders the actual markdown content */}
         <MDXLayoutRenderer code={post.body.code} />
       </div>

@@ -55,12 +55,9 @@ export default function Tech() {
 
       {/* Main Grid: 1 column mobile, 2 columns desktop */}
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">
-        
         {/* Frontend Category */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Frontend
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Frontend</h2>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {technologies.frontend.map((tech) => (
               <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
@@ -70,9 +67,7 @@ export default function Tech() {
 
         {/* Backend Category */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Backend
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Backend</h2>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {technologies.backend.map((tech) => (
               <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
@@ -82,9 +77,7 @@ export default function Tech() {
 
         {/* Databases Category */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Datenbanken
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Datenbanken</h2>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {technologies.datenbanken.map((tech) => (
               <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
@@ -94,16 +87,13 @@ export default function Tech() {
 
         {/* Tools Category */}
         <div className="flex flex-col space-y-6">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">
-            Tools
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Tools</h2>
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
             {technologies.tools.map((tech) => (
               <TechCard key={tech.name} name={tech.name} icon={tech.icon} />
             ))}
           </div>
         </div>
-
       </div>
     </div>
   )
