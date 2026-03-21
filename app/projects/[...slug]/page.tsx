@@ -1,7 +1,6 @@
 import { allBlogs } from 'contentlayer/generated'
 import { notFound } from 'next/navigation'
 import { MDXLayoutRenderer } from 'pliny/mdx-components'
-import { coreContent } from 'pliny/utils/contentlayer'
 
 // 1. Tell Next.js which pages to build
 export const generateStaticParams = async () => {
@@ -21,8 +20,6 @@ export default async function Page(props: { params: Promise<{ slug: string[] }> 
   if (!post) {
     return notFound()
   }
-
-  const mainContent = coreContent(post)
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl">
