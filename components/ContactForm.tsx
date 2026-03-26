@@ -60,7 +60,7 @@ export default function ContactForm() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="mt-2 w-full rounded-md bg-[#111827] px-4 py-3 font-semibold text-white transition-opacity hover:opacity-90 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:outline-none dark:bg-gray-900 dark:hover:bg-gray-800"
+        className="bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-full px-8 py-3 font-semibold text-white shadow-sm transition-colors"
       >
         Nachricht senden
       </button>

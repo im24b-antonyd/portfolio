@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="space-y-8">
         {/* Header Outside Container */}
         <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
-          Kontaktdaten
+          Kontaktformular
         </h1>
 
         {/* Main Card Container */}

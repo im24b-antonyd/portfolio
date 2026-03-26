@@ -9,19 +9,16 @@ const hobbies = [
   {
     id: 1,
     title: 'Klavier',
-    description: 'Die Welt der Musik erkunden',
     icon: <PianoIcon className="h-6 w-6" />,
   },
   {
     id: 2,
     title: 'Tischtennis',
-    description: 'Blitzschnell reagieren auf den Ballwechsel.',
     icon: <TTIcon className="h-6 w-6" />,
   },
   {
     id: 3,
     title: 'Schach',
-    description: 'Den nächsten Zug planen',
     icon: <ChessIcon className="h-6 w-6" />,
   },
 ]
@@ -73,12 +70,7 @@ export default function About() {
           </h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             {hobbies.map((hobby) => (
-              <HobbyCard
-                key={hobby.id}
-                title={hobby.title}
-                description={hobby.description}
-                icon={hobby.icon}
-              />
+              <HobbyCard key={hobby.id} title={hobby.title} icon={hobby.icon} />
             ))}
           </div>
         </div>
@@ -87,7 +79,7 @@ export default function About() {
         <div className="flex justify-center pt-4">
           <Link
             href="/contact"
-            className="rounded-full bg-blue-400 px-8 py-3 font-semibold text-white shadow-sm transition-colors hover:bg-blue-500 dark:bg-blue-500 dark:hover:bg-blue-600"
+            className="bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-full px-8 py-3 font-semibold text-white shadow-sm transition-colors"
           >
             Lass uns quatschen!
           </Link>

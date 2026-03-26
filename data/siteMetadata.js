@@ -1,9 +1,10 @@
-/** @type {import("pliny/config").PlinyConfig } */
+/** @type {{title: string, author: string, headerTitle: string, description: string, language: string, theme: string, siteUrl: string, siteRepo: string, siteLogo: string, socialBanner: string, mastodon: string, email: string, github: string, locale: string, stickyNav: boolean, analytics: {umamiAnalytics: {umamiWebsiteId: string}}, newsletter: {provider: string}, comments: {provider: string, giscusConfig: {repo: string, repositoryId: string, category: string, categoryId: string, mapping: string, reactions: string, metadata: string, theme: string, darkTheme: string, themeURL: string, lang: string}}}} */
 const siteMetadata = {
   title: 'Daniel´s Portfolio',
   author: 'Daniel Antony',
   headerTitle: '<DA />',
-  description: 'Portfolio eines Full Stack Developer & IMS Schüler im 3.ten Jahr.',
+  description:
+    'Hallo, ich bin Daniel Antony Menistren. Ich bin im 3.ten Jahr in der IMS . Als Full-Stack-Entwickler liegt mein Fokus darin, technische Logik mit einem guten Auge für das Frontend zu verbinden. ',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
@@ -77,4 +78,4 @@ const siteMetadata = {
   },
 }
 
-module.exports = siteMetadata
+export default siteMetadata

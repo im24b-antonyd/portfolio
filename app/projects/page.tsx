@@ -4,8 +4,8 @@ import Link from 'next/link'
 const projects = [
   {
     id: 1,
-    title: 'Project One',
-    description: 'A brief description of the first project and what it does.',
+    title: 'Projekt Eins',
+    description: 'Eine kurze Beschreibung zum Projekt 1',
     image: '/static/images/twitter-card.png',
     githubLink: 'https://github.com',
     learnMoreLink: '#',
@@ -13,8 +13,8 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Project Two',
-    description: 'A brief description of the second project and what it does.',
+    title: 'Projekt Zwei',
+    description: 'Eine kurze Beschreibung zum Projekt 2',
     image: '/static/images/twitter-card.png',
     githubLink: 'https://github.com',
     learnMoreLink: '#',
@@ -22,12 +22,12 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Project Three',
-    description: 'A brief description of the third project and what it does.',
+    title: 'Projekt Drei',
+    description: 'Eine kurze Beschreibung zum Projekt 3',
     image: '/static/images/twitter-card.png',
     githubLink: 'https://github.com',
     learnMoreLink: '#',
-    tags: ['TypeScript', 'Prisma', 'PostgreSQL'],
+    tags: ['TypeScript', 'Prisma', 'PostgresSQL'],
   },
 ]
 
@@ -39,7 +39,7 @@ export default function Projects() {
           Projekte
         </h1>
         <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          A collection of my recent work.
+          Eine Sammlung von meinen Projekten.
         </p>
       </div>
 
@@ -108,7 +108,7 @@ export default function Projects() {
                   href={project.learnMoreLink}
                   className="group text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 inline-flex items-center text-sm font-medium"
                 >
-                  Learn More
+                  Mehr Erfahren
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"

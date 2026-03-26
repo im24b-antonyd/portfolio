@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           href={project.learnMoreLink}
           className="group inline-flex items-center text-sm font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
         >
-          Learn More
+          Mehr Erfahren
           {/* Lucide Arrow Right Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
