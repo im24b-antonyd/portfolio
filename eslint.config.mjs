@@ -12,9 +12,18 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 })
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
+  // 1. ADD THIS: Explicitly ignore heavy folders to prevent the freeze
   {
-    ignores: ['next-env.d.ts', 'next.config.js'],
+    ignores: [
+      '**/node_modules/**',
+      '.next/**',
+      'out/**',
+      'build/**',
+      'next-env.d.ts',
+      'next.config.js',
+    ],
   },
   js.configs.recommended,
   ...compat.extends(
@@ -29,28 +38,24 @@ export default [
     plugins: {
       '@typescript-eslint': typescriptEslint,
     },
-
     languageOptions: {
       globals: {
         ...globals.browser,
-        ...globals.amd,
         ...globals.node,
       },
-
       parser: tsParser,
-      ecmaVersion: 5,
-      sourceType: 'commonjs',
-
+      // 2. FIX THIS: Use modern versions
+      ecmaVersion: 'latest',
+      sourceType: 'module',
       parserOptions: {
-        project: true,
+        // 3. CAUTION: If it still freezes, comment Out the line below
+        project: './tsconfig.json',
         tsconfigRootDir: __dirname,
       },
     },
-
     rules: {
       'prettier/prettier': 'error',
       'react/react-in-jsx-scope': 'off',
-
       'jsx-a11y/anchor-is-valid': [
         'error',
         {

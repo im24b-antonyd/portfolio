@@ -19,7 +19,7 @@ export default function Home({ posts }) {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/static/images/Studio_Ghibli.png"
+              src="/static/images/studio_ghibli.jpg"
               alt="Studio Ghibli"
               width={500}
               height={500}
