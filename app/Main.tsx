@@ -8,8 +8,8 @@ export default function Home({ posts }) {
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="flex items-center justify-between space-x-8 pt-6 pb-8">
-          <div className="space-y-2 md:space-y-5">
+        <div className="flex flex-col-reverse items-center justify-between gap-8 pt-6 pb-8 md:flex-row">
+          <div className="space-y-2 text-center md:space-y-5 md:text-left">
             <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
               Daniel Antony
             </h1>
@@ -17,13 +17,13 @@ export default function Home({ posts }) {
               {siteMetadata.description}
             </p>
           </div>
-          <div className="flex-shrink-0">
+          <div className="w-64 flex-shrink-0 sm:w-80 md:w-[400px] lg:w-[500px]">
             <Image
-              src="/static/images/studio_ghibli.jpg"
-              alt="Studio Ghibli"
+              src="/static/images/daniel.png"
+              alt="Daniel Antony"
               width={500}
               height={500}
-              className="rounded-full"
+              className="h-auto w-full rounded-2xl object-cover shadow-lg"
             />
           </div>
         </div>
