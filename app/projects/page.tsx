@@ -8,17 +8,8 @@ const projects = [
     description: 'Lernen sie die Welt der SBB kennen.',
     image: '/static/images/sbb.svg',
     githubLink: 'https://github.com',
-    learnMoreLink: '#',
+    learnMoreLink: 'https://sbb-lore.vercel.app/',
     tags: ['Next.js', 'Tailwind', 'React'],
-  },
-  {
-    id: 2,
-    title: 'Would you rather?',
-    description: 'Was würden sie lieber?',
-    image: '/static/images/wyr.svg',
-    githubLink: 'https://github.com',
-    learnMoreLink: '#',
-    tags: ['Node.js', 'Express', 'MongoDB'],
   },
 ]
 
