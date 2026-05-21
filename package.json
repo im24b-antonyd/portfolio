@@ -39,6 +39,7 @@
     "remark": "^15.0.1",
     "remark-gfm": "^4.0.1",
     "remark-github-blockquote-alert": "^2.0.1",
+    "resend": "^6.10.0",
     "tailwindcss": "^4.1.18",
     "unist-util-visit": "^5.1.0"
   },
