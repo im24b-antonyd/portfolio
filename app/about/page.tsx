@@ -46,20 +46,6 @@ export default function About() {
                 meiner Freizeit lerne ich ständig neue Techniken.
               </p>
             </div>
-
-            {/* Profile Image Space */}
-            <div className="relative flex h-40 w-40 shrink-0 items-center justify-center overflow-hidden rounded-full border-4 border-gray-100 bg-gray-50 md:h-48 md:w-48 dark:border-gray-700 dark:bg-gray-700">
-              <Image
-                src="/static/images/avatar.png"
-                alt="Daniel Antony"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 160px, 192px"
-                priority
-              />
-              {/* Fallback text if image fails to load or before it's added */}
-              <span className="text-sm text-gray-400 dark:text-gray-500">Image Space</span>
-            </div>
           </div>
         </div>
 
@@ -81,7 +67,7 @@ export default function About() {
             href="/contact"
             className="bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-full px-8 py-3 font-semibold text-white shadow-sm transition-colors"
           >
-            Lass uns quatschen!
+            Kontaktieren sie mich!
           </Link>
         </div>
       </div>

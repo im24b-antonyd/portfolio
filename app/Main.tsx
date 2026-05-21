@@ -19,11 +19,11 @@ export default function Home({ posts }) {
           </div>
           <div className="flex-shrink-0">
             <Image
-              src="/static/images/Studio_Ghibli.png"
-              alt="Studio Ghibli"
+              src="/static/images/daniel.png"
+              alt="Daniel"
               width={500}
               height={500}
-              className="rounded-full"
+              className="rounded-lg"
             />
           </div>
         </div>

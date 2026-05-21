@@ -13,7 +13,7 @@ const siteMetadata = {
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'daniel.antonymenistren@gmail.com',
-  github: 'https://github.com',
+  github: 'https://github.com/im24b-antonyd',
   locale: 'en-US',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,

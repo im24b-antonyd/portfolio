@@ -4,30 +4,21 @@ import Link from 'next/link'
 const projects = [
   {
     id: 1,
-    title: 'Projekt Eins',
-    description: 'Eine kurze Beschreibung zum Projekt 1',
-    image: '/static/images/twitter-card.png',
+    title: 'SBB-Lore',
+    description: 'Lernen sie die Welt der SBB kennen.',
+    image: '/static/images/sbb.svg',
     githubLink: 'https://github.com',
     learnMoreLink: '#',
     tags: ['Next.js', 'Tailwind', 'React'],
   },
   {
     id: 2,
-    title: 'Projekt Zwei',
-    description: 'Eine kurze Beschreibung zum Projekt 2',
-    image: '/static/images/twitter-card.png',
+    title: 'Would you rather?',
+    description: 'Was würden sie lieber?',
+    image: '/static/images/wyr.svg',
     githubLink: 'https://github.com',
     learnMoreLink: '#',
     tags: ['Node.js', 'Express', 'MongoDB'],
-  },
-  {
-    id: 3,
-    title: 'Projekt Drei',
-    description: 'Eine kurze Beschreibung zum Projekt 3',
-    image: '/static/images/twitter-card.png',
-    githubLink: 'https://github.com',
-    learnMoreLink: '#',
-    tags: ['TypeScript', 'Prisma', 'PostgresSQL'],
   },
 ]
 
