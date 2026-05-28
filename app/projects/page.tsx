@@ -7,7 +7,7 @@ const projects = [
     title: 'SBB-Lore',
     description: 'Lernen sie die Welt der SBB kennen.',
     image: '/static/images/sbb.svg',
-    githubLink: 'https://github.com',
+    githubLink: 'https://github.com/IM23a-braendlim/SBB_Lore',
     learnMoreLink: 'https://sbb-lore.vercel.app/',
     tags: ['Next.js', 'Tailwind', 'React'],
   },
