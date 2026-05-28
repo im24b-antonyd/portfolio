@@ -1,6 +1,6 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import HobbyCard from '@/components/HobbyCard'
+import PageTitle from '@/components/PageTitle'
 import PianoIcon from '@/data/svg/piano.svg'
 import TTIcon from '@/data/svg/tt.svg'
 import ChessIcon from '@/data/svg/chess.svg'
@@ -25,35 +25,25 @@ const hobbies = [
 
 export default function About() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
-      <div className="space-y-16">
+    <div className="py-12 md:py-16">
+      <div className="space-y-12">
         {/* Main Heading */}
-        <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900 md:text-5xl dark:text-gray-100">
-          Hier erfähren Sie mehr über mich!
-        </h1>
+        <PageTitle>Hier erfahren Sie mehr über mich!</PageTitle>
 
         {/* Bio Card */}
         <div className="rounded-2xl border border-gray-200 bg-white p-8 shadow-sm dark:border-gray-700 dark:bg-gray-800">
-          <div className="flex flex-col-reverse items-center gap-8 md:flex-row md:items-start md:justify-between">
-            <div className="flex-1 text-center md:text-left">
-              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">
-                Über Mich
-              </h2>
-              <p className="leading-relaxed text-gray-600 dark:text-gray-400">
-                Hallo, ich bin Daniel Antony. Ich bin ein leidenschaftlicher Fullstack-Entwickler
-                mit einem Fokus auf moderne Webtechnologien wie React und Next.js. Ich genieße es,
-                komplexe Probleme zu lösen und benutzerfreundliche Anwendungen zu erstellen. In
-                meiner Freizeit lerne ich ständig neue Techniken.
-              </p>
-            </div>
-          </div>
+          <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-gray-100">Über Mich</h2>
+          <p className="leading-relaxed text-gray-600 dark:text-gray-400">
+            Hallo, ich bin Daniel Antony. Ich bin ein leidenschaftlicher Fullstack-Entwickler mit
+            mit einem Fokus auf moderne Webtechnologien wie React und Next.js. Ich geniesse es,
+            komplexe Probleme zu lösen und benutzerfreundliche Anwendungen zu erstellen. In meiner
+            Freizeit lerne ich ständig neue Techniken.
+          </p>
         </div>
 
         {/* Hobbys Section */}
         <div className="space-y-8">
-          <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-gray-100">
-            Hobbys
-          </h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100">Hobbys</h2>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
             {hobbies.map((hobby) => (
               <HobbyCard key={hobby.id} title={hobby.title} icon={hobby.icon} />
@@ -62,7 +52,7 @@ export default function About() {
         </div>
 
         {/* Call to Action */}
-        <div className="flex justify-center pt-4">
+        <div className="flex justify-center">
           <Link
             href="/contact"
             className="bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-full px-8 py-3 font-semibold text-white shadow-sm transition-colors"

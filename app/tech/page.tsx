@@ -1,4 +1,5 @@
 import TechCard from '@/components/TechCard'
+import PageTitle from '@/components/PageTitle'
 
 // Import custom SVGs
 import NextJsIcon from '@/data/icons/nextjs.svg'
@@ -47,11 +48,9 @@ const technologies = {
 
 export default function Tech() {
   return (
-    <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 lg:px-8">
+    <div className="py-12 md:py-16">
       {/* Header Outside the Main Grid */}
-      <h1 className="mb-12 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl md:text-5xl dark:text-gray-100">
-        Technologien
-      </h1>
+      <PageTitle className="mb-8 md:mb-12">Technologien</PageTitle>
 
       {/* Main Grid: 1 column mobile, 2 columns desktop */}
       <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-16">

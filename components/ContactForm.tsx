@@ -108,7 +108,7 @@ export default function ContactForm() {
       )}
       {status === 'error' && (
         <p className="text-sm text-red-600 dark:text-red-400">
-          Fehler beim Senden. Bitte versuche es später erneut.
+          Fehler beim Senden. Bitte versuchen Sie es später erneut.
         </p>
       )}
     </form>

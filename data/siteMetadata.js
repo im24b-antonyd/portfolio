@@ -1,11 +1,11 @@
 /** @type {{title: string, author: string, headerTitle: string, description: string, language: string, theme: string, siteUrl: string, siteRepo: string, siteLogo: string, socialBanner: string, mastodon: string, email: string, github: string, locale: string, stickyNav: boolean, analytics: {umamiAnalytics: {umamiWebsiteId: string}}, newsletter: {provider: string}, comments: {provider: string, giscusConfig: {repo: string, repositoryId: string, category: string, categoryId: string, mapping: string, reactions: string, metadata: string, theme: string, darkTheme: string, themeURL: string, lang: string}}}} */
 const siteMetadata = {
-  title: 'Daniel´s Portfolio',
+  title: 'Daniels Portfolio',
   author: 'Daniel Antony',
   headerTitle: '<DA />',
   description:
-    'Hallo, ich bin Daniel Antony Menistren. Ich bin im 3.ten Jahr in der IMS . Als Full-Stack-Entwickler liegt mein Fokus darin, technische Logik mit einem guten Auge für das Frontend zu verbinden. ',
-  language: 'en-us',
+    'Hallo, ich bin Daniel Antony Menistren. Ich bin im dritten Jahr in der IMS. Als Full-Stack-Entwickler liegt mein Fokus darauf, technische Logik mit einem guten Auge für das Frontend zu verbinden.',
+  language: 'de-CH',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
@@ -14,7 +14,7 @@ const siteMetadata = {
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'daniel.antonymenistren@gmail.com',
   github: 'https://github.com/im24b-antonyd',
-  locale: 'en-US',
+  locale: 'de-CH',
   // set to true if you want a navbar fixed to the top
   stickyNav: false,
   analytics: {
@@ -73,7 +73,7 @@ const siteMetadata = {
       // example: https://giscus.app/themes/custom_example.css
       themeURL: '',
       // This corresponds to the `data-lang="en"` in giscus's configurations
-      lang: 'en',
+      lang: 'de',
     },
   },
 }

@@ -25,7 +25,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           />
         ) : (
           <div className="flex h-full w-full items-center justify-center text-gray-400">
-            No image
+            Kein Bild
           </div>
         )}
       </div>
@@ -67,7 +67,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           href={project.learnMoreLink}
           className="group inline-flex items-center text-sm font-medium text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300"
         >
-          Mehr Erfahren
+          Mehr erfahren
           {/* Lucide Arrow Right Icon */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
