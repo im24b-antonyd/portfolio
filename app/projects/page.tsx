@@ -5,7 +5,7 @@ const projects = [
   {
     id: 1,
     title: 'SBB-Lore',
-    description: 'Lernen sie die Welt der SBB kennen.',
+    description: 'Lernen Sie die Welt der SBB kennen.',
     image: '/static/images/sbb.svg',
     githubLink: 'https://github.com/IM23a-braendlim/SBB_Lore',
     learnMoreLink: 'https://sbb-lore.vercel.app/',
@@ -15,14 +15,11 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="divide-y divide-gray-200 dark:divide-gray-700">
+    <div className="dark:divide-gray-700">
       <div className="space-y-2 pt-6 pb-8 md:space-y-5">
         <h1 className="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
           Projekte
         </h1>
-        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-          Eine Sammlung von meinen Projekten.
-        </p>
       </div>
 
       <div className="container py-12">

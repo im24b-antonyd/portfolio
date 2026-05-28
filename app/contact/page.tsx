@@ -19,7 +19,7 @@ export default function Contact() {
                 In Kontakt kommen
               </h2>
               <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-                Haben sie fragen über mich oder zu meinen Projekte?
+                Haben Sie fragen über mich oder zu meinen Projekte?
               </p>
             </div>
 

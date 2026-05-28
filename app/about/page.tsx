@@ -29,7 +29,7 @@ export default function About() {
       <div className="space-y-16">
         {/* Main Heading */}
         <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900 md:text-5xl dark:text-gray-100">
-          Hier erfährst du mehr über mich!
+          Hier erfähren Sie mehr über mich!
         </h1>
 
         {/* Bio Card */}
@@ -67,7 +67,7 @@ export default function About() {
             href="/contact"
             className="bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-600 rounded-full px-8 py-3 font-semibold text-white shadow-sm transition-colors"
           >
-            Kontaktieren sie mich!
+            Kontaktieren Sie mich!
           </Link>
         </div>
       </div>

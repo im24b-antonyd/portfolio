@@ -49,7 +49,7 @@ export default function ContactForm() {
           type="text"
           id="name"
           name="name"
-          placeholder="Dein Name"
+          placeholder="Ihr Name"
           className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           required
         />
@@ -67,7 +67,7 @@ export default function ContactForm() {
           type="email"
           id="email"
           name="email"
-          placeholder="deine.email@beispiel.de"
+          placeholder="Ihre.email@beispiel.de"
           className="w-full rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           required
         />
@@ -85,7 +85,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={5}
-          placeholder="Deine Nachricht hier..."
+          placeholder="Ihre Nachricht hier..."
           className="w-full resize-y rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500 focus:outline-none dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400"
           required
         ></textarea>
@@ -103,7 +103,7 @@ export default function ContactForm() {
       {/* Status Messages */}
       {status === 'success' && (
         <p className="text-sm text-green-600 dark:text-green-400">
-          Vielen Dank! Deine Nachricht wurde gesendet.
+          Vielen Dank! Ihre Nachricht wurde gesendet.
         </p>
       )}
       {status === 'error' && (
