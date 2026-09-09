@@ -5,12 +5,12 @@ import PageTitle from '@/components/PageTitle'
 const projects = [
   {
     id: 1,
-    title: 'SBB-Lore',
+    title: 'Rezept Manager',
     description: 'Lernen Sie die Welt der SBB kennen.',
-    image: '/static/images/sbb.svg',
-    githubLink: 'https://github.com/IM23a-braendlim/SBB_Lore',
-    learnMoreLink: 'https://sbb-lore.vercel.app/',
-    tags: ['Next.js', 'Tailwind', 'React'],
+    image: '',
+    githubLink: 'https://github.com/dantony-dev/Recipe-Manger',
+    learnMoreLink: '',
+    tags: ['Next.js', 'Tailwind', 'React', 'Java'],
   },
 ]
 
