@@ -6,7 +6,7 @@ const projects = [
   {
     id: 1,
     title: 'Rezept Manager',
-    description: 'Lernen Sie die Welt der SBB kennen.',
+    description: 'Ein Tool um Rezepte zu speichern.',
     image: '',
     githubLink: 'https://github.com/dantony-dev/Recipe-Manger',
     learnMoreLink: '',
