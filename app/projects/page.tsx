@@ -12,6 +12,15 @@ const projects = [
     learnMoreLink: '',
     tags: ['Next.js', 'Tailwind', 'React', 'Java'],
   },
+  {
+    id: 2,
+    title: 'Duck Drift',
+    description: '2D-Top-Down-Rennspiel für den Browser mit Multiplayer-Steuerung per Smartphone.',
+    image: '',
+    githubLink: 'https://github.com/Lorenzo-Se/duck-drift',
+    learnMoreLink: 'https://server.b206b21.deploio.app/host/',
+    tags: ['HTML', 'CSS', 'Node.js'],
+  },
 ]
 
 export default function Projects() {
